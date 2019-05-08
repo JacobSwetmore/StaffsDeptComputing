@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Staffordshire University Department of Computing</title>
+    <meta name="description" content="Staffordshire University Department of Computing." />
+    <meta name="author" content="Jacob Swetmore" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oqm3zqr.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="img/ico" href="favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $(".subitem").toggleClass("subitem2");
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul id="navlist">
+            <li class="subitem subitem2">
+                <div id="more" class="subnav">
+                    <button class=" subnavbtn">MORE <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a id="currentstudentsub" href="#company">CURRENT STUDENT</a>
+                        <a id="applysub" href="#team">APPLY</a>
+                        <a id="visitsub" href="#careers">VISIT</a>
+                        <a id="staffssub" href="#company">STAFFS</a>
+                        <a id="newssub" href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a>
+                        <a id="alumnisub" href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a>
+                        <a id="coursessub" href="https://staffordshirecomputing.firebaseapp.com/index.html">COURSES</a>
+                    </div>
+                    <li id="currentstudent" class="subitem subitem2"><a href="currentstudent.html">CURRENT STUDENT</a></li>
+                    <li id="apply" class="subitem subitem2"><a href="apply.html">APPLY</a></li>
+                    <li id="visit" class="subitem subitem2"><a href="visit.html">VISIT</a></li>
+                    <li id="staffs" class="subitem subitem2"><a href="STAFFS.HTML">STAFFS</a></li>
+                    <li id="news" class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
+                    <li id="alumni" class="subitem subitem2"><a href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a></li>
+                    <li id="courses" class="subitem subitem2"><a href="courses.html">COURSES</a></li>
+                </div>
+            </li>
+            <li id="logoli" style="float:left"><a id="logo"
+                    style="font-size: 20px; font-weight: 800;padding-top: 10px; padding-bottom: 4px;" href="index.html"><img
+                        id="logoimg" style="z-index: 10; height: 30px;" src="images/LOGO.png"
+                        alt="Staffs Department of Computing Logo"></a></li>
+
+        </ul>
+        <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
+
+    </nav>
+
+    <img id="beacon" class="pulse" src="images/beacon.png" alt="Beacon AI">
+
+    <!-- <div class="grid-container">
+        <div class="grid-item">COURSES</div>
+        <div class="grid-item">ALUMNI</div>
+        <div class="grid-item">NEWS</div>  
+        <div class="grid-item">STAFFS</div>
+        <div class="grid-item">VISIT</div>
+        <div class="grid-item">APPLY</div>  
+        <div class="grid-item">EVENTS</div>
+        <div class="grid-item">BUSINESS</div>
+        <div class="grid-item">9</div>  
+      </div> -->
+
+    <!-- 1st row */ -->
+    <div style="background-attachment: fixed" class="square3 bg img7">
+        <div class="content3">
+            DEPARTMENT OF COMPUTING
+            <p style="font-size: 25px;" class="subtitle">AT STAFFORDSHIRE UNIVERSITY.</p>
+            <div class="row coursesrow">
+                <div class="column coursescolumn">
+                    <h3>Get Connected</h3>
+                    <p>Take advantage of our huge network of professional links.</p>
+                </div>
+                <div class="column coursescolumn">
+                    <h3>Get Connected</h3>
+                    <p>Take advantage of our huge network of professional links.</p>
+                </div>
+                <div class="column coursescolumn">
+                    <h3>Get Connected</h3>
+                    <p>Take advantage of our huge network of professional links.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="courses.html">
+        <div class="square bg img1 imgbg">
+            <div class="content">
+                COURSES
+                <p class="subtitle">EXPLORE OUR WIDE RANGE OF CUTTING EDGE COURSES</p>
+            </div>
+        </div>
+    </a>
+    <a href="visit">
+        <div class="square bg img5 imgbg">
+            <div class="content">
+                VISIT
+                <p class="subtitle">WANT TO FIND OUT WHAT WE'RE ALL ABOUT? BOOK AN OPEN DAY</p>
+            </div>
+        </div>
+    </a>
+    <a href="apply">
+        <div class="square bg img6 imgbg">
+            <div class="content">
+                APPLY<p class="subtitle">STEP INTO YOUR FUTURE. BE #PROUDTOBESTAFFS</p>
+            </div>
+        </div>
+    </a>
+    <a href="staffs">
+        <div class="square bg img4 imgbg">
+            <div class="content">
+                STAFFS
+                <p class="subtitle">WHY STAFFS? FIND OUT WHY WE'RE #PROUDTOBESTAFFS</p>
+            </div>
+        </div>
+    </a>
+    <a href="https://staffordshirecomputing.firebaseapp.com/index.html">
+        <div class="square bg img2 imgbg">
+            <div class="content">
+                ALUMNI
+                <p class="subtitle">DISCOVER WHAT OUR GRADUATES HAVE GONE ON TO ACHIEVE</p>
+            </div>
+
+        </div>
+    </a>
+    <a href="news">
+        <div class="square bg img3 imgbg">
+            <div class="content">
+                NEWS
+                <p class="subtitle">SEE WHATS GOING ON AT STAFFORDSHIRE UNIVERSITY</p>
+            </div>
+        </div>
+    </a>
+    <!-- 2nd row */ -->
+
+
+    <div id="footer">
+        <div class="row">
+            <div class="column">
+                <img id="staffslogo" src="images/staffordshire_logo.png" alt="Staffordshire University Logo">
+                <p id="address"><b>Staffordshire University</b> <br><b>Department of Computing</b> <br> College Road
+                    <br>University Quarter
+                    <br>Stoke-on-Trent
+                    <br>Staffordshire
+                    ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+            </div>
+            <div class="column secondcolumn" id="smartopenday" style="">
+                <p style="font-size: 10px; padding-top: 10px;" id="formtext opendaytext lineheight"></p>Book an Open Day
+                </p>
+                <div><img class="opendaybutton leftpadding lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                    <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                    <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                </div>
+                <form action="">
+
+                    <p class="formtext lineheight">Name:</p>
+                    <input class="opendayinput leftpadding lineheight" type="text" name="Name">
+                    <p class="formtext lineheight">Email:</p>
+                    <input class="opendayinput leftpadding lineheight" type="email" name="Email">
+                    <button id="bookbutton" style="margin-top: 30px;" class="leftpadding lineheight" type="button">
+                        Book
+                    </button>
+                </form>
+            </div>
+            <div class="column">
+                <div style="margin-top: 30px;" class="row3">
+                    <div class="column3">
+                        <a href="https://www.facebook.com/StaffsUniCDT/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/staffscomputing?lang=en" class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/staffsuni/?hl=en" class="fa fa-instagram"></a>
+                        <p class="footer-heading">Study</p>
+                        <ul class="linkslist">
+                            <li>
+                                <a href="/undergraduate/">Undergraduate</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">Postgraduate</a>
+                            </li>
+                            <li>
+                                <a href="/part-time/">Part-time</a>
+                            </li>
+                            <li>
+                                <a href="/professional/">Professional</a>
+                            </li>
+                            <li>
+                                <a href="/distancelearning/">Distance learning</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Two-year degrees</a>
+                            </li>
+                            <li>
+                                <p class="footer-heading">Information For</p>
+                            </li>
+                            <li>
+                                <a href="/undergraduate/">Teachers and Careers Advisors</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">Alumni</a>
+                            </li>
+                        </ul>
+                        <!-- <ul class="linkslist">
+                           
+                        </ul> -->
+
+                    </div>
+                    <div class="column3">
+                        <p id="alsosee" class="footer-heading">Also See</p>
+                        <ul class="linkslist">
+                            <li>
+                                <a href="/undergraduate/">A-Z Index</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">News</a>
+                            </li>
+                            <li>
+                                <a href="/part-time/">Events</a>
+                            </li>
+                            <li>
+                                <a href="/professional/">Job Vacancies</a>
+                            </li>
+                            <li>
+                                <a href="/distancelearning/">Legal</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Modern Slavery</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Partnerships</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div id="footer1">
+            <img id="staffslogo" src="images/staffordshire_logo.png" alt="Staffordshire University Logo">
+            <p id="address"><b>Staffordshire University</b> <br>College Road <br>University Quarter <br>Stoke-on-Trent
+                <br>Staffordshire
+                ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+        </div>
+        <div id="footer2">
+            <p id="opendaytext"></p>Book an Open Day</p>
+            <div><img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+                <img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+                <img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+            </div>
+            <form action="">
+                
+                <p>Name:</p>
+                <input class="opendayinput" type="text" name="Name">
+                <p>Email:</p>
+                <input class="opendayinput" type="email" name="Email">
+                <button id="bookbutton" type="button">
+                    Book
+                </button>
+            </form>
+
+        </div>
+        <div id="footer3"></div> -->
+    </div>
+    <script>
+        function myFunction() {
+            console.log(document.getElementsByClassName("subitem"))
+            document.getElementsByClassName("subitem").toggleClass('subitem2')
+        }
+    </script>
+</body>

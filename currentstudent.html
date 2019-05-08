@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Staffordshire University Department of Computing</title>
+    <meta name="description" content="Staffordshire University Department of Computing." />
+    <meta name="author" content="Jacob Swetmore" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="studentstyles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oqm3zqr.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="img/ico" href="favicon.ico" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $(".subitem").toggleClass("subitem2");
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul id="navlist">
+            <li class="subitem subitem2"><a href="apply.html">LIBRARY</a></li>
+            <li class="subitem subitem2"><a href="https://staffsuniversity-my.sharepoint.com">ONEDRIVE</a></li>
+            <li class="subitem subitem2"><a href="HTTPS://www.staffs.ac.uk/email">EMAIL</a></li>
+            <li class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
+            <li class="subitem subitem2"><a href="HTTPS://TIMETables.staffs.ac.uk/SWS/2018/default.aspx">TIMETABLES</a></li>
+            <li class="subitem subitem2"><a href="https://BLACKBoard.staffs.ac.uk">BLACKBOARD</a></li>
+            <li id="logoli" style="float:left"><a id="logo" style="font-size: 20px; font-weight: 800;padding-top: 10px; padding-bottom: 4px;"
+                    href="index.html"><img style="height: 30px;" src="images/LOGO.png" alt="Staffs Department of Computing Logo"></a></li>
+
+            </ul>
+            <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </a>
+        <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
+
+    </nav>
+
+    <img id="beacon" class="pulse" src="images/beacon.png" alt="Beacon AI">
+
+    <!-- <div class="grid-container">
+        <div class="grid-item">COURSES</div>
+        <div class="grid-item">ALUMNI</div>
+        <div class="grid-item">NEWS</div>  
+        <div class="grid-item">STAFFS</div>
+        <div class="grid-item">VISIT</div>
+        <div class="grid-item">APPLY</div>  
+        <div class="grid-item">EVENTS</div>
+        <div class="grid-item">BUSINESS</div>
+        <div class="grid-item">9</div>  
+      </div> -->
+
+    <!-- 1st row */ -->
+    <a href="https://BLACKBoard.staffs.ac.uk">
+        <div class="square bg img1current imgbg">
+            <div class="content">
+                BLACKBOARD
+                <p class="subtitle">VIRTUAL LEARNING ENVIRONMENT</p>
+            </div>
+        </div>
+    </a>
+    <a href="HTTPS://TIMETables.staffs.ac.uk/SWS/2018/default.aspx">
+        <div class="square bg img2current imgbg">
+            <div class="content">
+                TIMETABLES
+                <p class="subtitle">ACCESS YOUR PERSONALISED TEACHING TIMETABLE</p>
+            </div>
+        </div>
+    </a>
+    <a href="HTTPS://www.staffs.ac.uk/email">
+        <div class="square bg img3current imgbg">
+            <div class="content">
+                EMAIL
+                <p class="subtitle">ACCESS YOUR STUDENT EMAIL ACCOUNT</p>
+            </div>
+        </div>
+    </a>
+    <a href="staffs">
+        <div class="square bg img2 imgbg">
+            <div class="content">
+                E:VISION
+                <p class="subtitle">FURTHER YOUR CAREER WITH E:VISION</p>
+            </div>
+        </div>
+    </a>
+    <a href="alumni">
+        <div class="square bg img4current imgbg">
+            <div class="content">
+                SOFTWARE
+                <p class="subtitle">DOWNLOAD A PLETHORA OF SOFTWARE AVALIABLE TO STAFFORDSHIRE STUDENTS</p>
+            </div>
+
+        </div>
+    </a>
+    <a href="https://staffsuniversity-my.sharepoint.com">
+        <div class="square bg img5current imgbg">
+            <div class="content">
+                ONEDRIVE
+                <p class="subtitle">ACCESS YOUR UNIVERSITY CLOUD STORAGE</p>
+            </div>
+        </div>
+    </a>
+    <a href="news">
+        <div class="square bg img6current imgbg">
+            <div class="content">
+                PC AVAILABILITY
+                <p class="subtitle">DISCOVER WHICH LABS HAVE AVALIABLE COMPUTERS</p>
+            </div>
+        </div>
+    </a>
+    <a href="news">
+        <div class="square bg img7bg imgbg">
+            <div class="content">
+                LIBRARY
+                <p class="subtitle">LIBRARY INFORMATION FOR STUDENTS</p>
+            </div>
+        </div>
+    </a>
+    <a href="news">
+        <div class="square bg img1 imgbg">
+            <div class="content">
+                COURSE INFORMATION
+                <p class="subtitle">DISCOVER THE DIFFERENT COURSES AND MODULES</p>
+            </div>
+        </div>
+    </a>
+    <!-- 2nd row */ -->
+
+   
+    <div id="footer">
+        <div class="row">
+            <div class="column">
+                <img id="staffslogo" src="images/staffordshire_logo.png" alt="Staffordshire University Logo">
+                <p id="address"><b>Staffordshire University</b> <br><b>Department of Computing</b> <br> College Road <br>University Quarter
+                    <br>Stoke-on-Trent
+                    <br>Staffordshire
+                    ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+            </div>
+            <div class="column secondcolumn" id="smartopenday" style="">
+                <p style="font-size: 10px; padding-top: 10px;" id="formtext opendaytext lineheight"></p>Book an Open Day</p>
+                <div><img class="opendaybutton leftpadding lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                    <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                    <img class="opendaybutton lineheight" src="images/MAROPENDAY.png" alt="March Open Day">
+                </div>
+                <form action="">
+
+                    <p class="formtext lineheight">Name:</p>
+                    <input class="opendayinput leftpadding lineheight" type="text" name="Name">
+                    <p class="formtext lineheight">Email:</p>
+                    <input class="opendayinput leftpadding lineheight" type="email" name="Email">
+                    <button id="bookbutton" style="margin-top: 30px;" class="leftpadding lineheight" type="button">
+                        Book
+                    </button>
+                </form>
+            </div>
+            <div class="column">
+                <div style="margin-top: 30px;" class="row3">
+                    <div class="column3">
+                            <a href="https://www.facebook.com/StaffsUniCDT/" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/staffscomputing?lang=en" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/staffsuni/?hl=en" class="fa fa-instagram"></a>
+                        <p class="footer-heading">Study</p>
+                        <ul class="linkslist">
+                            <li>
+                                <a href="/undergraduate/">Undergraduate</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">Postgraduate</a>
+                            </li>
+                            <li>
+                                <a href="/part-time/">Part-time</a>
+                            </li>
+                            <li>
+                                <a href="/professional/">Professional</a>
+                            </li>
+                            <li>
+                                <a href="/distancelearning/">Distance learning</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Two-year degrees</a>
+                            </li>
+                            <li>
+                                <p class="footer-heading">Information For</p>
+                            </li>
+                            <li>
+                                <a href="/undergraduate/">Teachers and Careers Advisors</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">Alumni</a>
+                            </li>
+                        </ul>
+                        <!-- <ul class="linkslist">
+                           
+                        </ul> -->
+
+                    </div>
+                    <div class="column3">
+                        <p id="alsosee" class="footer-heading">Also See</p>
+                        <ul class="linkslist">
+                            <li>
+                                <a href="/undergraduate/">A-Z Index</a>
+                            </li>
+                            <li>
+                                <a href="/postgraduate/">News</a>
+                            </li>
+                            <li>
+                                <a href="/part-time/">Events</a>
+                            </li>
+                            <li>
+                                <a href="/professional/">Job Vacancies</a>
+                            </li>
+                            <li>
+                                <a href="/distancelearning/">Legal</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Modern Slavery</a>
+                            </li>
+                            <li>
+                                <a href="/fast-track-degrees/">Partnerships</a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div id="footer1">
+            <img id="staffslogo" src="images/staffordshire_logo.png" alt="Staffordshire University Logo">
+            <p id="address"><b>Staffordshire University</b> <br>College Road <br>University Quarter <br>Stoke-on-Trent
+                <br>Staffordshire
+                ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+        </div>
+        <div id="footer2">
+            <p id="opendaytext"></p>Book an Open Day</p>
+            <div><img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+                <img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+                <img class="opendaybutton" src="images/MAROPENDAY.png" alt="March Open Day">
+            </div>
+            <form action="">
+                
+                <p>Name:</p>
+                <input class="opendayinput" type="text" name="Name">
+                <p>Email:</p>
+                <input class="opendayinput" type="email" name="Email">
+                <button id="bookbutton" type="button">
+                    Book
+                </button>
+            </form>
+
+        </div>
+        <div id="footer3"></div> -->
+    </div>
+    <script>
+        function myFunction() {
+            console.log(document.getElementsByClassName("subitem"))
+            document.getElementsByClassName("subitem").toggleClass('subitem2')
+        }
+    </script>
+</body>
