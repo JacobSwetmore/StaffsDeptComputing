@@ -11,31 +11,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesplaceholder.css" />
+
     <link rel="stylesheet" href="https://use.typekit.net/oqm3zqr.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <link rel="icon" type="img/ico" href="favicon.ico" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
+    <script>
+        $(document).ready(function () {
+            $("#hamburger").click(function () {
+                $(".subitem").toggleClass("subitem2");
+            });
+        });
+    </script>
 
 
 </head>
 
-<body>
-    <nav>
+<body style="background-color: rgb(230, 230, 230);">
+    <nav style="    box-shadow: 0px 3px 23px -14px rgba(0, 0, 0, 0.548); ">
         <ul id="navlist">
             <li class="subitem subitem2">
                 <div id="more" class="subnav">
                     <button class=" subnavbtn">MORE <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
-                        <a id="currentstudentsub" href="currentstudent.html">CURRENT STUDENT</a>
-                        <a id="applysub" href="apply.html">APPLY</a>
-                        <a id="visitsub" href="visit.html">VISIT</a>
-                        <a id="staffssub" href="staffs.html">ABOUT</a>
+                        <a id="currentstudentsub" href="#company">CURRENT STUDENT</a>
+                        <a id="applysub" href="#team">APPLY</a>
+                        <a id="visitsub" href="#careers">VISIT</a>
+                        <a id="staffssub" href="#company">STAFFS</a>
                         <a id="newssub" href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a>
                         <a id="alumnisub" href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a>
                         <a id="coursessub" href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a>
@@ -43,7 +53,7 @@
                     <li id="currentstudent" class="subitem subitem2"><a href="currentstudent.html">CURRENT STUDENT</a></li>
                     <li id="apply" class="subitem subitem2"><a href="apply.html">APPLY</a></li>
                     <li id="visit" class="subitem subitem2"><a href="visit.html">VISIT</a></li>
-                    <li id="staffs" class="subitem subitem2"><a href="staffs.html">ABOUT</a></li>
+                    <li id="staffs" class="subitem subitem2"><a href="STAFFS.HTML">STAFFS</a></li>
                     <li id="news" class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
                     <li id="alumni" class="subitem subitem2"><a href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a></li>
                     <li id="courses" class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a></li>
@@ -61,113 +71,41 @@
         <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
 
     </nav>
+<div  class="container pt-5 pb-5">
 
-    <img id="beacon" class="pulse" src="images/beacon.png" alt="Beacon AI">
-    <img id="scrollgif" class="pulse" src="images/SCROLL.gif" alt="Mouse Scroll">
-    <script>
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) { 
-                $('#scrollgif').fadeOut(1000); 
-            } 
-        });
-    </script>
+    <div id="card2" style="border: none; background-color: #ffffff;" class="card corner">
+        <div class="card-body mb3 drop-shadow paddingnews">
+            <h1 id="title2" style="text-transform: uppercase;">'STAFFS' does not exist yet!</h1>
+            <p id="text">As this site is currently under-construction, the page 'Staffs' has not yet been created.<br>When it is created, it will include:</p>
+            <ul>
+                <li id="list">Information about Stafforshire University <ul>
+                        <li>Location</li>
+                        <li>Travel Links</li>
+                        <li>Nearby Attractions</li>
+                        <li>Information on Stoke-on-Trent</li>
+                    </ul>
+                </li>
+                <li id="list">Unique Selling Points of Staffordshire University, EG: <ul>
+                    <li>University Rankings (Top 50)</li>
+                    <li>Top 10 Student Satisfaction</li>
+                    <li>The Connected University</li>
+                </ul>
+            </li>
+                
+            </ul>
+            <button id="backbutton" style="background-color: #da1e37; color: white;     border-radius: 0px;
+                        margin-bottom: 30px;
+                        margin-top: 30px;" class="btn btn-news corner" onclick="goBack()">GO BACK</button>
 
-    <div style="background-attachment: fixed" class="square3 bg img7">
-        <div class="content3">
-            DEPARTMENT OF COMPUTING
-            <p style="font-size: 25px;" class="subtitle">AT STAFFORDSHIRE UNIVERSITY.</p>
-            <div class="row coursesrow">
-                <div class="column coursescolumn">
-                    <h3>Get Connected</h3>
-                    <p>Take advantage of our huge network of professional links.</p>
-                </div>
-                <div class="column coursescolumn">
-                    <h3>Get Connected</h3>
-                    <p>Take advantage of our huge network of professional links.</p>
-                </div>
-                <div class="column coursescolumn">
-                    <h3>Get Connected</h3>
-                    <p>Take advantage of our huge network of professional links.</p>
-                </div>
-            </div>
         </div>
     </div>
-    <a href="http://localhost:8080/ComputingDept/?page_id=215">
-        <div class="square bg img1 imgbg">
-            <div class="content">
-                COURSES
-                <p class="subtitle">EXPLORE OUR WIDE RANGE OF CUTTING EDGE COURSES</p>
-            </div>
-        </div>
-    </a>
-    <a href="visit.html">
-        <div class="square bg img5 imgbg">
-            <div class="content">
-                VISIT
-                <p class="subtitle">WANT TO FIND OUT WHAT WE'RE ALL ABOUT? BOOK AN OPEN DAY</p>
-            </div>
-        </div>
-    </a>
-    <a href="apply.html">
-        <div class="square bg img6 imgbg">
-            <div class="content">
-                APPLY<p class="subtitle">STEP INTO YOUR FUTURE. BE #PROUDTOBESTAFFS</p>
-            </div>
-        </div>
-    </a>
-    <a href="staffs.html">
-        <div class="square bg img4 imgbg">
-            <div class="content">
-                STAFFS
-                <p class="subtitle">WHY STAFFS? FIND OUT WHY WE'RE #PROUDTOBESTAFFS</p>
-            </div>
-        </div>
-    </a>
-    <a href="https://staffordshirecomputing.firebaseapp.com/index.html">
-        <div class="square bg img2 imgbg">
-            <div class="content">
-                ALUMNI
-                <p class="subtitle">DISCOVER WHAT OUR GRADUATES HAVE GONE ON TO ACHIEVE</p>
-            </div>
+</div>
 
-        </div>
-    </a>
-    <a href="http://localhost:8080/ComputingDept/?cat=3">
-        <div class="square bg img3 imgbg">
-            <div class="content">
-                NEWS
-                <p class="subtitle">SEE WHATS GOING ON AT STAFFORDSHIRE UNIVERSITY</p>
-            </div>
-        </div>
-    </a>
-    <a href="business.html">
-        <div class="square bg img8 imgbg">
-            <div class="content">
-                BUSINESS
-                <p class="subtitle">INTERESTED IN WORKING WITH US? CLICK HERE</p>
-            </div>
-        </div>
-    </a>
-    <a href="skills.html">
-        <div class="square bg img9 imgbg">
-            <div class="content">
-                SKILLS
-                <p class="subtitle">DISCOVER THE SKILLS THAT WILL MAKE YOU EMPLOYABLE</p>
-
-            </div>
-        </div>
-    </a>
-    
-    <a href="currentstudent.html">
-        <div class="square bg img10 imgbg">
-            <div class="content">
-                STUDENT
-                <p class="subtitle">ALREADY A STUDENT? CLICK HERE TO LOG IN</p>
-
-            </div>
-        </div>
-    </a>
-
+<script>
+    function goBack() {
+    window.history.back();
+    }
+    </script>
 
     <div id="footer">
         <div class="row">

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <title>Vue Introduction</title>
+    <script src="scripts/vue.js"></script>
+</head>
+
+<body>
+    
+    <div id="app">
+        <ul>
+            <li v-for="(ingredient, i) in ingredients" :key="ingredient">{{ingredient}} ({{i}})</li>
+        </ul>
+        <template v-for="(ingredient, index) in ingredients">
+            <h1>{{ingredient}}</h1>
+            <p>{{index}}</p>
+        </template>
+
+    </div>
+
+    <script src="scripts/myScript.js"></script>
+</body>
+
+</html>
