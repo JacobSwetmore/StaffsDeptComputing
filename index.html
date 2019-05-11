@@ -58,7 +58,7 @@
         <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
+        <a alt="Search icon" id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
 
     </nav>
 
@@ -188,10 +188,14 @@
                 </div>
                 <form action="">
 
-                    <p class="formtext lineheight">Name:</p>
-                    <input class="opendayinput leftpadding lineheight" type="text" name="Name">
-                    <p class="formtext lineheight">Email:</p>
-                    <input class="opendayinput leftpadding lineheight" type="email" name="Email">
+                 
+                    <label class="formtext lineheight">Name:<br>
+                        <input class="opendayinput leftpadding lineheight" label="" type="text" name="Name">
+                    </label>
+                    <label class="formtext lineheight"><br>Email:<br>
+
+                        <input class="opendayinput leftpadding lineheight" type="email" name="Email">
+                    </label>
                     <button id="bookbutton" style="margin-top: 30px;" class="leftpadding lineheight" type="button">
                         Book
                     </button>
