@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="darkmode.css" />
     <link rel="stylesheet" href="https://use.typekit.net/oqm3zqr.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -30,23 +31,23 @@
         <ul id="navlist">
             <li class="subitem subitem2">
                 <div id="more" class="subnav">
-                    <button class=" subnavbtn">MORE <i class="fa fa-caret-down"></i></button>
+                    <button class="darktext subnavbtn">MORE <i class="fa fa-caret-down"></i></button>
                     <div class="subnav-content">
-                        <a id="currentstudentsub" href="currentstudent.html">CURRENT STUDENT</a>
-                        <a id="applysub" href="apply.html">APPLY</a>
-                        <a id="visitsub" href="visit.html">VISIT</a>
-                        <a id="staffssub" href="staffs.html">ABOUT</a>
-                        <a id="newssub" href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a>
-                        <a id="alumnisub" href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a>
-                        <a id="coursessub" href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a>
+                        <a class="darktext"id="currentstudentsub" href="currentstudent.html">CURRENT STUDENT</a>
+                        <a class="darktext" id="applysub" href="apply.html">APPLY</a>
+                        <a class="darktext" id="visitsub" href="visit.html">VISIT</a>
+                        <a class="darktext"id="staffssub" href="staffs.html">ABOUT</a>
+                        <a class="darktext" id="newssub" href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a>
+                        <a class="darktext" id="alumnisub" href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a>
+                        <a class="darktext" id="coursessub" href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a>
                     </div>
-                    <li id="currentstudent" class="subitem subitem2"><a href="currentstudent.html">CURRENT STUDENT</a></li>
-                    <li id="apply" class="subitem subitem2"><a href="apply.html">APPLY</a></li>
-                    <li id="visit" class="subitem subitem2"><a href="visit.html">VISIT</a></li>
-                    <li id="staffs" class="subitem subitem2"><a href="staffs.html">ABOUT</a></li>
-                    <li id="news" class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
-                    <li id="alumni" class="subitem subitem2"><a href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a></li>
-                    <li id="courses" class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a></li>
+                    <li id="currentstudent" class="subitem subitem2"><a class="darktext" href="currentstudent.html">CURRENT STUDENT</a></li>
+                    <li id="apply" class="subitem subitem2"><a class="darktext"  href="apply.html">APPLY</a></li>
+                    <li id="visit" class="subitem subitem2"><a class="darktext"  href="visit.html">VISIT</a></li>
+                    <li id="staffs" class="subitem subitem2"><a class="darktext"  href="staffs.html">ABOUT</a></li>
+                    <li id="news" class="subitem subitem2"><a class="darktext"  href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
+                    <li id="alumni" class="subitem subitem2"><a  class="darktext" href="https://staffordshirecomputing.firebaseapp.com/index.html">ALUMNI</a></li>
+                    <li id="courses" class="subitem subitem2"><a class="darktext" href="http://localhost:8080/ComputingDept/?page_id=215">COURSES</a></li>
                 </div>
             </li>
             <li id="logoli" style="float:left"><a id="logo"
@@ -55,24 +56,31 @@
                         alt="Staffs Department of Computing Logo"></a></li>
 
         </ul>
-        <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a alt="Search icon" id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
+        
+        <a alt="Search icon" id="searchlink" href="SEARCH"><i class="fas darktext searchicon fa-search"></i></a>
 
     </nav>
 
     <img id="beacon" class="pulse" src="images/beacon.png" alt="Beacon AI">
-    <img id="scrollgif" class="pulse" src="images/SCROLL.gif" alt="Mouse Scroll">
+   
+    <img id="scrollsquare" class="pulse" src="images/whitebox.png" alt="Mouse Scroll Box">
+    <a href="#scrollpoint"><img id="scrollgif" class="pulse" src="images/SCROLL.gif" alt="Mouse Scroll"></a>
+
     <script>
+        $("#scrollsquare").delay(5000).fadeIn(1000);
+        $("#scrollgif").delay(5000).fadeIn(1000);
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) { 
-                $('#scrollgif').fadeOut(1000); 
-            } 
+
+            if ($(this).scrollTop() > 50) {
+                $('#scrollgif').fadeOut(1000);
+                $('#scrollsquare').fadeOut(1000);
+            }
+
+
         });
     </script>
 
-    <div style="background-attachment: fixed" class="square3 bg img7">
+    <div style="background-attachment: fixed" id="hero" class="square3 bg img7">
         <div class="content3">
             DEPARTMENT OF COMPUTING
             <p style="font-size: 25px;" class="subtitle">AT STAFFORDSHIRE UNIVERSITY.</p>
@@ -93,7 +101,7 @@
         </div>
     </div>
     <a href="http://localhost:8080/ComputingDept/?page_id=215">
-        <div class="square bg img1 imgbg">
+        <div id="scrollpoint" class="square bg img1 imgbg">
             <div class="content">
                 COURSES
                 <p class="subtitle">EXPLORE OUR WIDE RANGE OF CUTTING EDGE COURSES</p>
@@ -167,6 +175,13 @@
             </div>
         </div>
     </a>
+    
+            <div id="tabletonly" class="square bg img11 imgbg">
+                <div class="content">
+                   
+    
+                </div>
+            </div>
 
 
     <div id="footer">
@@ -177,9 +192,22 @@
                     <br>University Quarter
                     <br>Stoke-on-Trent
                     <br>Staffordshire
-                    ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+                    ST4 2DE <br><b>+44 (0)1782 294000</b><br><br><b>High Constrast / Dark Mode:</b><br> <label class="switch"> 
+                    <br>
+                        <input id="nightmodebutton" type="checkbox">
+                        <span class="slider round"></span>
+                    </label></p>
+                    <script>
+                        $(function () {
+                            $('#nightmodebutton').change(function () {
+                                $("#navlist, #footer, .square, #hero, .subnav-content").toggleClass("darkbg");
+                                $(".darktext").toggleClass("dark");
+                                $(".square").toggleClass("darkborder");
+                            });
+                        });
+                    </script>
             </div>
-            <div class="column secondcolumn" id="smartopenday" style="">
+            <div class="column secondcolumn" id="smartopenday" >
                 <p style="font-size: 10px; padding-top: 10px;" id="formtext opendaytext lineheight"></p>Book an Open Day
                 </p>
                 <div><img class="opendaybutton leftpadding lineheight" src="images/MAROPENDAY.png" alt="March Open Day">

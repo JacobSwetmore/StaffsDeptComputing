@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +47,7 @@ nav {
     padding-right: 100px;
     overflow: hidden;
     background-color: white;
+    transition: 0.5s;
 }
 
 #navlist li {
@@ -266,6 +268,9 @@ opacity: 0.9;
     background-image: url('images/CURRENTSTUDENTBG.png');
 
 }
+.img11{
+    background-image: url('images/TABLETONLYBG.png');
+}
 
 
 
@@ -281,6 +286,7 @@ opacity: 0.9;
     display: inline-block;
     height: 100%;
     width: 100%;
+    transition: 0.5s;
 }
 
 #footer1, #footer2, #footer3 {
@@ -485,16 +491,31 @@ b {
 
 #scrollgif {
     text-align: center;
-    width: 200px;
-    position: absolute;
-    bottom: 90px;
+    width: 160px;
+    position: fixed;
+    bottom: 30px;
     left: 50%;
     right: 50px;
-    margin-left: -100px;
+    margin-left: -80px;
     z-index: 999;
     opacity: 1;
-    transition: 0.5s;
     cursor: pointer;
+    display: none;
+}
+
+
+#scrollsquare {
+    text-align: center;
+    width: 100px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    right: 50px;
+    margin-left: -50px;
+    z-index: 999;
+    opacity: 1;
+    cursor: pointer;
+    display: none;
 }
 
 
@@ -960,8 +981,14 @@ b {
 }
 
 
+#tabletonly{
+    display: none;
+}
 
 @media screen and (max-width: 1070px) {
+    #tabletonly{
+         display: inline;
+    }
     .square3 {
         float: left;
         position: relative;
@@ -1061,6 +1088,9 @@ b {
     .square {
         width: 100%;
         padding-bottom: 100%;
+    }
+    #tabletonly{
+        display: none;
     }
     .squarebottom {
         width: 50%;
