@@ -1,0 +1,178 @@
+.content {
+    font-size: 45px;
+}
+
+@media screen and (max-width: 1190px) {
+    .content {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .content {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .content {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 866px) {
+    .content {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .content {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .content {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .content {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .content {
+        font-size: 30px;
+    }
+}
+
+
+.subnav:hover #timetablessub {
+    display: none;
+}
+.subnav:hover #blackboardsub {
+    display: none;
+}
+
+@media screen and (max-width: 1070px) {
+    #more {
+        display: inline;
+    }
+    .subnav:hover #applysub {
+        display: inline;
+    }
+    .subnav:hover #visitsub {
+        display: none;
+    }
+    .subnav:hover #staffssub {
+        display: none;
+    }
+    .subnav:hover #timetablessub {
+        display: none;
+    }
+    .subnav:hover #blackboardsub {
+        display: none;
+    }
+    .subnav:hover #coursessub {
+        display: none;
+    }
+    #currentstudent {
+        display: none;
+    }
+    #apply {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1030px)  {
+    #more {
+        display: inline;
+    }
+    .subnav:hover #applysub {
+        display: none;
+    }
+    .subnav:hover #visitsub {
+        display: none;
+    }
+    .subnav:hover #staffssub {
+        display: none;
+    }
+    .subnav:hover #timetablessub {
+        display: none;
+    }
+    .subnav:hover #blackboardsub {
+        display: none;
+    }
+    .subnav:hover #coursessub {
+        display: none;
+    }
+    #currentstudent {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    #more {
+        display: inline;
+    }
+    .subnav:hover #applysub {
+        display: inline;
+    }
+    .subnav:hover #visitsub {
+        display: inline;
+    }
+    .subnav:hover #staffssub {
+        display: inline;
+    }
+    .subnav:hover #timetablessub {
+        display: inline;
+    }
+    .subnav:hover #blackboardsub {
+        display: inline;
+    }
+    .subnav:hover #coursessub {
+        display: none;
+    }
+    #timetables{
+        display: none;
+    }
+    #currentstudent {
+        display: none;
+    }
+    #apply {
+        display: none;
+    }
+    #visit {
+        display: none;
+    }
+    #staffs {
+        display: none;
+    }
+    #news {
+        display: none;
+    }
+    #alumni {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+#blackboard{
+    position: fixed;
+    right: 120px;
+}}
+
+@media screen and (max-width: 390px) {
+
+    #blackboard {
+        display: none;
+    }
+
+    .subnav:hover #blackboardsub {
+        display: inline;
+    }
+
+}

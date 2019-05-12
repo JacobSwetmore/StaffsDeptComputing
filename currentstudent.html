@@ -9,9 +9,11 @@
     <meta name="description" content="Staffordshire University Department of Computing." />
     <meta name="author" content="Jacob Swetmore" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="studentstyles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="darkmode.css" />
+
+    <link rel="stylesheet" href="addstyles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/oqm3zqr.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -35,7 +37,31 @@
 <body>
     <nav>
         <ul id="navlist">
-            <li class="subitem subitem2"><a href="apply.html">LIBRARY</a></li>
+                <li class="subitem subitem2">
+                        <div id="more" class="subnav">
+                            <button class="darktext subnavbtn">MORE <i id="downicon" class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a class="darktext"id="currentstudentsub" href="http://libguides.staffs.ac.uk/libraryresources">LIBRARY</a>
+                                <a class="darktext" id="applysub" href="https://staffsuniversity-my.sharepoint.com">ONEDRIVE</a>
+                                <a class="darktext" id="visitsub" href="HTTPS://www.staffs.ac.uk/email">EMAIL</a>
+                                <a class="darktext"id="staffssub" href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a>
+                                <a class="darktext" id="timetablessub" href="HTTPS://TIMETables.staffs.ac.uk/SWS/2018/default.aspx">TIMETABLES</a>
+                                <a class="darktext" id="blackboardsub" href="https://BLACKBoard.staffs.ac.uk">BLACKBOARD</a>
+                            </div>
+                            <li id="currentstudent" class="subitem subitem2"><a class="darktext" href="http://libguides.staffs.ac.uk/libraryresources">LIBRARY</a></li>
+                            <li id="apply" class="subitem subitem2"><a class="darktext"  href="https://staffsuniversity-my.sharepoint.com">ONEDRIVE</a></li>
+                            <li id="visit" class="subitem subitem2"><a class="darktext"  href="HTTPS://www.staffs.ac.uk/email">EMAIL</a></li>
+                            <li id="staffs" class="subitem subitem2"><a class="darktext"  href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
+                            <li id="timetables" class="subitem subitem2"><a class="darktext"  href="HTTPS://TIMETables.staffs.ac.uk/SWS/2018/default.aspx">TIMETABLES</a></li>
+                            <li id="blackboard" class="subitem subitem2"><a  class="darktext" href="https://BLACKBoard.staffs.ac.uk">BLACKBOARD</a></li>
+                        </div>
+                    </li>
+                    <li id="logoli" style="float:left"><a id="logo"
+                            style="font-size: 20px; font-weight: 800;padding-top: 10px; padding-bottom: 4px;" href="index.html"><img
+                                id="logoimg" style="z-index: 10; height: 30px;" src="images/LOGO.png"
+                                alt="Staffs Department of Computing Logo"></a></li>
+
+            <!-- <li class="subitem subitem2"><a href="apply.html">LIBRARY</a></li>
             <li class="subitem subitem2"><a href="https://staffsuniversity-my.sharepoint.com">ONEDRIVE</a></li>
             <li class="subitem subitem2"><a href="HTTPS://www.staffs.ac.uk/email">EMAIL</a></li>
             <li class="subitem subitem2"><a href="http://localhost:8080/ComputingDept/?cat=3">NEWS</a></li>
@@ -46,9 +72,9 @@
 
             </ul>
             <a href="javascript:void(0);" id="hamburger" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i> -->
         </a>
-        <a id="searchlink" href="SEARCH"><i class="fas searchicon fa-search"></i></a>
+        <a id="searchlink" href="search.html"><i class="fas searchicon fa-search"></i></a>
 
     </nav>
 
@@ -91,7 +117,7 @@
             </div>
         </div>
     </a>
-    <a href="staffs">
+    <a href="https://evision.staffs.ac.uk/urd/sits.urd/run/siw_lgn">
         <div class="square bg img2 imgbg">
             <div class="content">
                 E:VISION
@@ -99,11 +125,11 @@
             </div>
         </div>
     </a>
-    <a href="alumni">
+    <a href="http://localhost:8080/ComputingDept/">
         <div class="square bg img4current imgbg">
             <div class="content">
-                SOFTWARE
-                <p class="subtitle">DOWNLOAD A PLETHORA OF SOFTWARE AVALIABLE TO STAFFORDSHIRE STUDENTS</p>
+                SHOP
+                <p class="subtitle">ACCESS STAFFORDSHIRE MERCHANDISE, AND DOWNLOAD SOFTWARE.</p>
             </div>
 
         </div>
@@ -116,15 +142,15 @@
             </div>
         </div>
     </a>
-    <a href="news">
+    <a href="http://freepcfinder.staffs.ac.uk/">
         <div class="square bg img6current imgbg">
             <div class="content">
-                PC AVAILABILITY
+                LAB INFO
                 <p class="subtitle">DISCOVER WHICH LABS HAVE AVALIABLE COMPUTERS</p>
             </div>
         </div>
     </a>
-    <a href="news">
+    <a href="http://libguides.staffs.ac.uk/libraryresources">
         <div class="square bg img7bg imgbg">
             <div class="content">
                 LIBRARY
@@ -132,15 +158,19 @@
             </div>
         </div>
     </a>
-    <a href="news">
+    <a href="modules.html">
         <div class="square bg img1 imgbg">
             <div class="content">
-                COURSE INFORMATION
+                MODULES
                 <p class="subtitle">DISCOVER THE DIFFERENT COURSES AND MODULES</p>
             </div>
         </div>
     </a>
-    <!-- 2nd row */ -->
+    <div id="tabletonly" class="square bg img11 imgbg">
+            <div class="content">
+               
+
+            </div></div>
 
    
     <div id="footer">
@@ -150,7 +180,20 @@
                 <p id="address"><b>Staffordshire University</b> <br><b>Department of Computing</b> <br> College Road <br>University Quarter
                     <br>Stoke-on-Trent
                     <br>Staffordshire
-                    ST4 2DE <br><b>+44 (0)1782 294000</b></p>
+                    ST4 2DE <br><b>+44 (0)1782 294000</b><br><br><b>High Constrast / Dark Mode:</b><br> <label class="switch"> 
+                            <br>
+                                <input id="nightmodebutton" type="checkbox">
+                                <span class="slider round"></span>
+                            </label></p>
+                            <script>
+                                $(function () {
+                                    $('#nightmodebutton').change(function () {
+                                        $("#navlist, #footer, .square, #hero, .subnav-content").toggleClass("darkbg");
+                                        $(".darktext").toggleClass("dark");
+                                        $(".square").toggleClass("darkborder");
+                                    });
+                                });
+                            </script>
             </div>
             <div class="column secondcolumn" id="smartopenday" style="">
                 <p style="font-size: 10px; padding-top: 10px;" id="formtext opendaytext lineheight"></p>Book an Open Day</p>
@@ -269,9 +312,6 @@
         <div id="footer3"></div> -->
     </div>
     <script>
-        function myFunction() {
-            console.log(document.getElementsByClassName("subitem"))
-            document.getElementsByClassName("subitem").toggleClass('subitem2')
-        }
+       
     </script>
 </body>
