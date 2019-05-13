@@ -1294,33 +1294,3 @@ b {
 }
 
 
-.subnav{
-    display: inline !important;
-}
-.subnav-content{
-    display: inline !important;
-}
-#more {
-    display: inline !important;
-}
-#applysub {
-    display: inline !important;
-}
-#visitsub {
-    display: inline !important;
-}
-#staffssub {
-    display: inline !important;
-}
-#newssub {
-    display: inline !important;
-}
-#alumnisub {
-    display: inline !important;
-}
-#coursessub {
-    display: inline !important;
-}
-#currentstudent {
-    display: inline !important;
-}
