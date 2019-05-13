@@ -2,6 +2,11 @@
     font-size: 45px;
 }
 
+.deadlinetext{
+    margin-top: -30px;
+    margin-left: 70px;
+}
+
 @media screen and (max-width: 1190px) {
     .content {
         font-size: 40px;
