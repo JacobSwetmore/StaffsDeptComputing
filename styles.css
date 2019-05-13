@@ -1301,26 +1301,26 @@ b {
     display: inline !important;
 }
 #more {
-    display: inline;
+    display: inline !important;
 }
 #applysub {
-    display: inline;
+    display: inline !important;
 }
 #visitsub {
-    display: inline;
+    display: inline !important;
 }
 #staffssub {
-    display: inline;
+    display: inline !important;
 }
 #newssub {
-    display: inline;
+    display: inline !important;
 }
 #alumnisub {
-    display: inline;
+    display: inline !important;
 }
 #coursessub {
-    display: inline;
+    display: inline !important;
 }
 #currentstudent {
-    display: inline;
+    display: inline !important;
 }
