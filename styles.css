@@ -1008,6 +1008,8 @@ b {
     .subnav:hover #alumnisub {
         display: inline;
     }
+
+
    
     #currentstudent {
         display: none;
@@ -1289,4 +1291,36 @@ b {
     .subnav:hover #coursessub {
         display: inline;
     }
+}
+
+
+.subnav{
+    display: inline !important;
+}
+.subnav-content{
+    display: inline !important;
+}
+#more {
+    display: inline;
+}
+#applysub {
+    display: inline;
+}
+#visitsub {
+    display: inline;
+}
+#staffssub {
+    display: inline;
+}
+#newssub {
+    display: inline;
+}
+#alumnisub {
+    display: inline;
+}
+#coursessub {
+    display: inline;
+}
+#currentstudent {
+    display: inline;
 }
